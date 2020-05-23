@@ -2,3 +2,9 @@ form{
     border: 1px solid grey;
     width: 500px;
 }
+
+.carouselPics{
+    height: 600px;
+    width: 900px;
+    margin: auto;
+}
