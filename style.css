@@ -24,6 +24,12 @@ form{
     margin: auto;
 }
 
+#carouselBtn{
+    margin-left: 550px;
+    margin-top: 3px;
+    padding: 5px;
+}
+
 .fayHist{
     width: 25%;
     border: 1px solid maroon;
