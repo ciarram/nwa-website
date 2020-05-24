@@ -18,16 +18,22 @@ function postForm(){
 
 // for the carousel animation
 
+var timer;
+var i;
+// index for manual movement
 var btnIndex = 1;
+
+// index for auto movement
+var carIndex = 0;
 movePics(btnIndex);
+autoMove();
 
 function moveBtns(p){
     movePics(btnIndex += p);
 }
 
 function movePics(p){
-    //document.getElementById("carouselBtn").addEventListener('click', function(event){
-    var i;
+    // creates the method for the left and right arrows to move the pictures manually
     var slideShow = document.getElementsByClassName("carouselPics");
     if (p > slideShow.length){
         btnIndex = 1
@@ -41,5 +47,26 @@ function movePics(p){
         slideShow[i].style.display = "none";
     }
     slideShow[btnIndex-1].style.display = "block";
-    //});
+}
+
+
+function autoMove(){
+    var newSlides = document.getElementsByClassName("carouselPics");
+    for (i = 0; i < newSlides.length; i++){
+        newSlides[i].style.display = "none";
+    }
+    carIndex++;
+
+    if (carIndex > newSlides.length){
+        carIndex = 1;
+    }
+    newSlides[carIndex -1].style.display = "block";
+    
+    if (timer){
+        clearInterval(timer);
+        timer=null;
+    } else{
+        timer = setInterval(autoMove, 5000);
+    }
+    
 }

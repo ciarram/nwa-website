@@ -24,7 +24,7 @@ form{
     margin: auto;
 }
 
-#carouselBtn{
+.carouselBtn{
     margin-left: 550px;
     margin-top: 3px;
     padding: 5px;
@@ -34,6 +34,7 @@ form{
     width: 25%;
     border: 1px solid maroon;
     margin-top: 10px;
+    margin-left: 10px;
 }
 
 #fayList{
@@ -76,4 +77,36 @@ form{
     padding: 10px;
     width: 200px;
     height: 200px;
+}
+
+.univ{
+    border: 1px solid maroon;
+    width: 900px;
+    height: 150px;
+    overflow: scroll;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.dickson{
+    float: right;
+    border: 1px solid maroon;
+    width: 900px;
+    height: 150px;
+    overflow: scroll;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+h3{
+    text-align: center;
+}
+
+.farmMark{
+    border: 1px solid maroon;
+    width: 700px;
+    height: 150px;
+    overflow: scroll;
+    margin-top: 250px;
+    margin-left: 15px;
 }
