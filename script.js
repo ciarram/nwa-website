@@ -66,6 +66,7 @@ function autoMove(){
     
 }
 
+// allows the user to stop the animation
 function stopMove(){
     var stopSlides = document.getElementsByClassName("carouselPics");
     clearInterval(timer);

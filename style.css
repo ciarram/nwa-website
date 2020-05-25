@@ -34,10 +34,11 @@ form{
 #carouselBtnRight{
     margin-top: 3px;
     padding: 5px;
+    margin-left: 180px;
 }
 
 #autoScroll{
-    margin-left: 100px;
+    margin-left: 200px;
 }
 
 .fayHist{
