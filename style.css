@@ -9,19 +9,28 @@
     text-align: center;
 }
 
-h2{
+h2, h4{
     text-align: center;
+    font-family: "Palatino";
 }
+
 
 p{
     text-align: center;
+    font-size: 17px;
+    font-family: "Georgia";
+}
+
+.nwaHistory{
+    margin: 15px 35px;
 }
 
 form{
     border: 1px solid grey;
     width: 500px;
     height: 500px;
-    margin: auto;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 input{
@@ -40,6 +49,13 @@ input{
     margin-left: 125px;
     background-color: maroon;
     color: white;
+}
+
+#otherHomePic{
+    width: 40%;
+    height: 500px;
+    float: right;
+    margin-right: 30px;
 }
 
 .carouselPics{
@@ -61,15 +77,23 @@ input{
 }
 
 #autoScroll{
-    margin-left: 180px;
+    margin-left: 150px;
     padding: 5px;
+    background-color: mediumorchid;
+    color: white;
+}
+
+.highightSec{
+    margin-top: 200px;
 }
 
 .fayHist{
-    width: 25%;
+    width: 50%;
     border: 1px solid maroon;
     margin-top: 10px;
     margin-left: 10px;
+    text-align: center;
+    padding: 5px;
 }
 
 #fayList{
@@ -79,14 +103,16 @@ input{
     border: 0.5px solid maroon;
     padding: 10px;
     width: 200px;
-    height: 200px;
+    height: 300px;
+    padding: 5px;
 }
 
 .bentHist{
-    width: 25%;
+    width: 50%;
     border: 1px solid #0000CD;
     margin-top: 10px;
     margin-left: 10px;
+    text-align: center;
 }
 
 #bentList{
@@ -100,10 +126,11 @@ input{
 }
 
 .esHist{
-    width: 25%;
+    width: 50%;
     border: 1px solid #8FBC8F;
     margin-top: 10px;
     margin-left: 10px;
+    text-align: center;
 }
 
 #esList{
@@ -113,7 +140,7 @@ input{
     border: 0.5px solid #3CB371;
     padding: 10px;
     width: 200px;
-    height: 200px;
+    height: 320px;
 }
 
 .univ{
@@ -211,11 +238,4 @@ h3{
     overflow: scroll;
     margin-top: 250px;
     margin-left: 15px;
-}
-
-#eurekaHome{
-    width: 700px;
-    height: 450px;
-    margin-left: 500px;
-    margin-top: -300px;
 }

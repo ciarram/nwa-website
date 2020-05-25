@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', postForm);
 
+// creates the POST for the form
 function postForm(){
     document.getElementById("postQuestionForm").addEventListener('click', function(event){
         var req = new XMLHttpRequest();
@@ -50,7 +51,7 @@ function movePics(p){
 
 }
 
-
+//enables the autoscroll to start as soon as the page is loaded
 function autoMove(){
     var newSlides = document.getElementsByClassName("carouselPics");
     for (i = 0; i < newSlides.length; i++){
@@ -66,8 +67,18 @@ function autoMove(){
     
 }
 
-// allows the user to stop the animation
+// allows the user to stop and start the animation
 function stopMove(){
     var stopSlides = document.getElementsByClassName("carouselPics");
-    clearInterval(timer);
+    var startSlides = document.getElementById("autoScroll");
+
+    if (timer){
+        clearInterval(timer);
+        timer = null;
+        startSlides.value = "Start the AutoScroll";
+    } else {
+        autoMove();
+        timer = setInterval(autoMove, 4000);
+        startSlides.value = "Stop the AutoScroll";
+    }
 }
