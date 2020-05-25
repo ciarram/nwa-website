@@ -18,6 +18,8 @@ function postForm(){
 }
 
 // for the carousel animation
+// for the Carousel, I used https://www.w3schools.com/w3css/w3css_slideshow.asp to help me learn how to implement the moving pictures and the buttons
+// I also used https://stackoverflow.com/questions/30478992/slideshow-javascript-play-pause-button to help with the AutoScroll
 
 var timer = setInterval(autoMove, 4000);
 var i;

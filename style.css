@@ -1,3 +1,7 @@
+body{
+    background-image: url("images/background3.jpg");
+}
+
 .navbar{
     background-color: teal;
     padding: 15px;
@@ -9,45 +13,52 @@
     text-align: center;
 }
 
-h2, h4{
+h2, h3, h4{
     text-align: center;
     font-family: "Palatino";
+    color: white;
 }
 
 
-p{
+p, li{
     text-align: center;
     font-size: 17px;
     font-family: "Georgia";
 }
 
+.topFacts{
+    color:white;
+}
+
 .nwaHistory{
-    margin: 15px 35px;
+    margin: 20px 35px;
+    border: 1px solid black;
+    background-color: #F0F8FF;
 }
 
 form{
-    border: 1px solid grey;
-    width: 500px;
-    height: 500px;
-    margin-left: 20px;
-    margin-top: 20px;
+    border: 1px solid black;
+    background-color: #F0F8FF;
+    width:500px;
+    height: 275px;
+    margin:auto;
 }
 
 input{
     padding: 5px;
-    margin: 10px 0px;
     width: 250px;
 }
 
 #userQuestion{
-    height: 150px;
+    height: 75px;
     width: 250px;
 }
 
 #postQuestionForm{
-    padding: 10px;
-    margin-left: 125px;
-    background-color: maroon;
+    margin-top: 5px;
+    margin-left: 200px;
+    width: 100px;
+    background-color: teal;
     color: white;
 }
 
@@ -59,7 +70,7 @@ input{
 }
 
 .carouselPics{
-    height: 600px;
+    height: 550px;
     width: 1000px;
     margin: auto;
 }
@@ -78,8 +89,9 @@ input{
 
 #autoScroll{
     margin-left: 150px;
-    padding: 5px;
-    background-color: mediumorchid;
+    margin-top: 5px;
+    padding: 8px;
+    background-color: teal;
     color: white;
 }
 
@@ -103,7 +115,7 @@ input{
     border: 0.5px solid maroon;
     padding: 10px;
     width: 200px;
-    height: 300px;
+    height: 330px;
     padding: 5px;
 }
 
@@ -122,7 +134,7 @@ input{
     border: 0.5px solid #0000CD;
     padding: 10px;
     width: 200px;
-    height: 200px;
+    height: 240px;
 }
 
 .esHist{
@@ -140,11 +152,12 @@ input{
     border: 0.5px solid #3CB371;
     padding: 10px;
     width: 200px;
-    height: 320px;
+    height: 350px;
 }
 
 .univ{
     border: 1px solid maroon;
+    background-color: #F0F8FF;
     width: 900px;
     height: 150px;
     overflow: scroll;
@@ -173,6 +186,7 @@ input{
 .dickson{
     float: right;
     border: 1px solid maroon;
+    background-color: #F0F8FF;
     width: 900px;
     height: 150px;
     overflow: scroll;
@@ -182,10 +196,12 @@ input{
 
 h3{
     text-align: center;
+    color: black;
 }
 
 .farmMark{
     border: 1px solid maroon;
+    background-color: #F0F8FF;
     width: 900px;
     height: 150px;
     overflow: scroll;
@@ -195,6 +211,7 @@ h3{
 
 .square{
     border: 1px solid #0000CD;
+    background-color: #F0F8FF;
     width: 900px;
     height: 150px;
     overflow: scroll;
@@ -205,6 +222,7 @@ h3{
 .crystal{
     float: right;
     border: 1px solid #0000CD;
+    background-color: #F0F8FF;
     width: 900px;
     height: 150px;
     overflow: scroll;
@@ -214,6 +232,7 @@ h3{
 
 .vicDown{
     border: 1px solid #9400D3;
+    background-color: #F0F8FF;
     width: 900px;
     height: 150px;
     overflow: scroll;
@@ -224,6 +243,7 @@ h3{
 .cresent{
     float: right;
     border: 1px solid #ADD8E6;
+    background-color: #F0F8FF;
     width: 900px;
     height: 150px;
     overflow: scroll;
@@ -233,9 +253,32 @@ h3{
 
 .thorn{
     border: 1px solid #E6E6FA;
+    background-color: #F0F8FF;
     width: 900px;
     height: 150px;
     overflow: scroll;
     margin-top: 250px;
     margin-left: 15px;
+}
+
+footer{
+    margin-top: 50px;
+    width: 100%;
+    padding: 5px;
+    background-color: teal;
+    color: white;
+    text-align: left;
+}
+
+#bentFooter{
+    margin-top: 300px;
+}
+
+.footPar{
+    text-align: left;
+}
+
+.copyright{
+    font-size: 10px;
+    float: right;
 }
