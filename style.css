@@ -20,12 +20,31 @@ p{
 form{
     border: 1px solid grey;
     width: 500px;
+    height: 500px;
     margin: auto;
+}
+
+input{
+    padding: 5px;
+    margin: 10px 0px;
+    width: 250px;
+}
+
+#userQuestion{
+    height: 150px;
+    width: 250px;
+}
+
+#postQuestionForm{
+    padding: 10px;
+    margin-left: 125px;
+    background-color: maroon;
+    color: white;
 }
 
 .carouselPics{
     height: 600px;
-    width: 900px;
+    width: 1000px;
     margin: auto;
 }
 
@@ -42,7 +61,8 @@ form{
 }
 
 #autoScroll{
-    margin-left: 200px;
+    margin-left: 180px;
+    padding: 5px;
 }
 
 .fayHist{
@@ -103,6 +123,24 @@ form{
     overflow: scroll;
     margin-top: 30px;
     margin-left: 15px;
+}
+
+.leftPic{
+    width: 250px;
+    height: 200px;
+    float: left;
+}
+
+.rightPic{
+    width: 250px;
+    height: 200px;
+    float: right;
+}
+
+#mapBtn{
+    padding: 5px;
+    float:right;
+    margin-right: 300px;
 }
 
 .dickson{
@@ -176,8 +214,8 @@ h3{
 }
 
 #eurekaHome{
-    width: 500px;
-    height: 600px;
-    margin-left: 550px;
+    width: 700px;
+    height: 450px;
+    margin-left: 500px;
     margin-top: -300px;
 }
