@@ -18,7 +18,7 @@ function postForm(){
 
 // for the carousel animation
 
-var timer;
+var timer = setInterval(autoMove, 4000);
 var i;
 // index for manual movement
 var btnIndex = 1;
@@ -47,6 +47,7 @@ function movePics(p){
         slideShow[i].style.display = "none";
     }
     slideShow[btnIndex-1].style.display = "block";
+
 }
 
 
@@ -61,12 +62,11 @@ function autoMove(){
         carIndex = 1;
     }
     newSlides[carIndex -1].style.display = "block";
+    timer;
     
-    if (timer){
-        clearInterval(timer);
-        timer=null;
-    } else{
-        timer = setInterval(autoMove, 5000);
-    }
-    
+}
+
+function stopMove(){
+    var stopSlides = document.getElementsByClassName("carouselPics");
+    clearInterval(timer);
 }
