@@ -11,6 +11,11 @@ nav{
     color: white;
 }
 
+#navLogo{
+    background-color: white;
+    color: teal;
+}
+
 h2, h3, h4{
     text-align: center;
     font-family: "Palatino";
@@ -60,9 +65,6 @@ input{
     color: white;
 }
 
-.carousel-inner{
-    margin: auto;
-}
 
 .carousel-item{
     height: 1200px;
