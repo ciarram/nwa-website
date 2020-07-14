@@ -7,13 +7,18 @@ nav{
     padding: 15px;
 }
 
-.nav-item{
+.nav-link{
     color: white;
 }
 
 #navLogo{
     background-color: white;
     color: teal;
+}
+
+.navbar-toggler{
+    color: black;
+    border: 1px solid black;
 }
 
 h2, h3, h4{
@@ -65,29 +70,8 @@ input{
     color: white;
 }
 
-
 .carousel-item{
     height: 1200px;
-}
-
-#carouselBtnLeft{
-    margin-left: 550px;
-    margin-top: 3px;
-    padding: 5px;
-}
-
-#carouselBtnRight{
-    margin-top: 3px;
-    padding: 5px;
-    margin-left: 180px;
-}
-
-#autoScroll{
-    margin-left: 150px;
-    margin-top: 5px;
-    padding: 8px;
-    background-color: teal;
-    color: white;
 }
 
 .highightSec{
