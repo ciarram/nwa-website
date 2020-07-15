@@ -47,12 +47,10 @@ p, li{
 form{
     border: 1px solid black;
     background-color: #F0F8FF;
-    width:500px;
-    height: 275px;
     margin:auto;
 }
 
-input{
+/*input{
     padding: 5px;
     width: 250px;
 }
@@ -60,12 +58,9 @@ input{
 #userQuestion{
     height: 75px;
     width: 250px;
-}
+}*/
 
 #postQuestionForm{
-    margin-top: 5px;
-    margin-left: 200px;
-    width: 100px;
     background-color: teal;
     color: white;
 }
