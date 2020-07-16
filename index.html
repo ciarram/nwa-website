@@ -11,7 +11,7 @@
         <nav class="navbar navbar-expand-sm">
           <a class="navbar-brand" href="index.html" id="navLogo">NWA</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            Pages
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
@@ -44,28 +44,21 @@
           </section>
           <br/>
           
-          <!--<form>
-            <p>Sign Up to Learn More about Upcoming Events in NWA</p>
-            <label class="form-input">Name:
-              <input type="text" name="signupName" id="userName" maxlength="100">
-            </label>
-            <br/>
-            <label class="form-input">Email:
-              <input type="email" name="email" id="userEmail">
-            </label>
-            <br/>
-            <label class="form-input">Originally From:
-              <input type="text" name="origin" id="userOrigin" maxlength="100">
-            </label>
-            <br/>
-            <label class="form-input">Why are you interested in NWA:
-              <input type="text" name="question" id="userQuestion">
-            </label>
-            <br/>
-            <br/>
-            <input type="submit" id="postQuestionForm">
-          </form> -->
+         <form id="weatherForm">
+           <div class="form-group">
+             <input type="text" class="form-control" id="cityName">
+            </div>
+            <button type="submit" class="btn btn-primary" id="weatherBtn">See the Local Weather</button>
+         </form>
         </div>
+
+        <section id="weatherSection">
+          <h3>The Weather in Your Selected City is: </h3>
+          <p>City: </p>
+          <p>Current Temperature: </p>
+          <p>Feels Like: </p>
+          <p>Humidity: </p>
+        </section>
         
         <footer>
             <p class="footPar">Created by: Ciarra Murphy</p>

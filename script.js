@@ -1,14 +1,14 @@
+var apiKey = "5559c120a3f7be6b73acce32396df18f";
+
 document.addEventListener('DOMContentLoaded', postForm);
+document.addEventListener('DOMContentLoaded', weatherForm);
 
 function postForm(){
     document.getElementById("postQuestionForm").addEventListener('click', function(event){
         var req = new XMLHttpRequest();
         var printInfo = {name:document.getElementById("userName").value, email:document.getElementById("userEmail").value, 
         originallyFrom:document.getElementById("userOrigin").value, why:document.getElementById("userQuestion").value};
-        //printInfo.name = document.getElementById("nameForm").value;
-        //printInfo.age = document.getElementById("ageForm").value;
-        //printInfo.job = document.getElementById("jobForm").value;
-        //printInfo.major = document.getElementById("majorForm").value;
+        
         req.open('POST', 'http://httpbin.org/post', true);
         req.setRequestHeader('Content-Type', 'application/json');
 
@@ -20,3 +20,24 @@ function postForm(){
 }
 
 console.log("In the script JS file!"); 
+
+function weatherForm(){
+    document.getElementById("weatherBtn").addEventListener('click', function(event){
+        var cityEntry = document.getElementById('cityName').value;
+        var req = new XMLHttpRequest();
+        var url = "http://api.openweathermap.org/data/2.5/weather?q=" + cityEntry + ",ar,us&appid=" + apiKey + "&units=imperial";
+        req.open("GET", url, true);
+
+        //handles the asynchronous response
+        req.addEventListener('load', function(){
+            if (req.status >= 200 && req.status < 400){
+                var cityInfo = JSON.parse(req.responseText);
+                console.log(cityInfo)
+            } else{
+                console.log("Error in network request: " + req.statusText);
+            }
+        });
+        req.send(null);
+        event.preventDefault();
+    });
+}

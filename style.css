@@ -50,15 +50,14 @@ form{
     margin:auto;
 }
 
-/*input{
-    padding: 5px;
-    width: 250px;
+#weatherForm{
+    width: 30%;
+    float: left;
 }
 
-#userQuestion{
-    height: 75px;
-    width: 250px;
-}*/
+#cityName{
+    margin-top: 10px;
+}
 
 #postQuestionForm{
     background-color: teal;
