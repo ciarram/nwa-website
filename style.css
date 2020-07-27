@@ -52,11 +52,17 @@ form{
 
 #weatherForm{
     width: 30%;
-    float: left;
 }
 
 #cityName{
     margin-top: 10px;
+}
+
+#weatherSection{
+    background-color: #F0F8FF;
+    border: 1px solid black;
+    margin: 20px 35px;
+    visibility: hidden;
 }
 
 #postQuestionForm{
