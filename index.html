@@ -43,21 +43,55 @@
               </p>
           </section>
           <br/>
-          
-         <form id="weatherForm">
-           <div class="form-group">
-             <input type="text" class="form-control" id="cityName">
-            </div>
-            <button type="submit" class="btn btn-primary" id="weatherBtn">See the Local Weather</button>
-         </form>
-        </div>
 
-        <section id="weatherSection">
-          <h3>The Weather in <span id="cityWeatherName"></span> is: </h3>
-          <p>Current Temperature: <span id="currentTemp"></span></p>
-          <p>Feels Like: <span id="feelTemp"></span></p>
-          <p>Humidity: <span id="humidity"></span></p>
-        </section>
+         <form id="weatherForm">
+           <h5>Select from the List of Cities/Towns in NWA to see the Current Weather</h5>
+           <select class="form-control form-control-lg" id="cityName">
+             <option value="Bella Vista">Bella Vista</option>
+             <option value="Bentonville">Bentonville</option>
+             <option value="Berryville">Berryville</option>
+             <option value="Bethel Heights">Bethel Heights</option>
+             <option value="Cave Springs">Cave Springs</option>
+             <option value="Centerton">Centerton</option>
+             <option value="Decatur">Decatur</option>
+             <option value="Elkins">Elkins</option>
+             <option value="Elm Springs">Elm Springs</option>
+             <option value="Eureka Springs">Eureka Springs</option>
+             <option value="Farmington">Farmington</option>
+             <option value="Fayetteville">Fayetteville</option>
+             <option value="Garfield">Garfield</option>
+             <option value="Gateway">Gateway</option>
+             <option value="Gentry">Gentry</option>
+             <option value="Goshen">Goshen</option>
+             <option value="Gravette">Gravette</option>
+             <option value="Green Forest">Green Forest</option>
+             <option value="Greenland">Greenland</option>
+             <option value="Highfill">Highfill</option>
+             <option value="Huntsville">Huntsville</option>
+             <option value="Johnson">Johnson</option>
+             <option value="Lincoln">Lincoln</option>
+             <option value="Lowell">Lowell</option>
+             <option value="Pea Ridge">Pea Ridge</option>
+             <option value="Prairie Grove">Prairie Grove</option>
+             <option value="Rogers">Rogers</option>
+             <option value="Siloam Springs">Siloam Springs</option>
+             <option value="Springdale">Springdale</option>
+             <option value="Sulphur Springs">Sulphur Springs</option>
+             <option value="Tontitown">Tontitown</option>
+             <option value="West Fork">West Fork</option>
+             <option value="Winslow">Winslow</option>
+           </select>
+           <br/>
+           <button type="submit" class="btn btn-primary" id="weatherBtn">Submit</button>
+         </form>
+         <section id="weatherSection">
+           <h3>The Weather in <span id="cityWeatherName"></span> today is: </h3>
+           <p>Current Temperature: <span id="currentTemp"></span><span>&#8457;</span></p>
+           <p>Feels Like: <span id="feelTemp"></span><span>&#8457;</span></p>
+           <p>Humidity: <span id="humidity"></span><span>&#8457;</span></p>
+           <p>With: <span id="weatherDescrip"></span></p>
+          </section>
+        </div>
         
         <footer>
             <p class="footPar">Created by: Ciarra Murphy</p>

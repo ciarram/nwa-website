@@ -33,11 +33,13 @@ function weatherForm(){
             if (req.status >= 200 && req.status < 400){
                 var cityInfo = JSON.parse(req.responseText);
                 console.log(cityInfo)
+                console.log(cityInfo.weather[0].description)
                 document.getElementById("weatherSection").style.visibility = "visible";
                 document.getElementById("cityWeatherName").textContent = cityInfo.name;
                 document.getElementById("currentTemp").textContent = cityInfo.main.temp;
                 document.getElementById("feelTemp").textContent = cityInfo.main.feels_like;
                 document.getElementById("humidity").textContent = cityInfo.main.humidity;
+                document.getElementById("weatherDescrip").textContent = cityInfo.weather[0].description;
             } else{
                 console.log("Error in network request: " + req.statusText);
             }

@@ -51,11 +51,16 @@ form{
 }
 
 #weatherForm{
-    width: 30%;
+    width: 40%;
+    padding: 10px;
 }
 
 #cityName{
     margin-top: 10px;
+}
+
+#cityList{
+    width: 60%;
 }
 
 #weatherSection{
