@@ -34,8 +34,8 @@ p, li{
     font-family: "Georgia";
 }
 
-.topFacts{
-    color:white;
+.jumbotron{
+    background-color: rgba(245, 245, 245, 0.2)
 }
 
 .nwaHistory{
@@ -85,8 +85,9 @@ form{
 
 .fayHist{
     width: 50%;
-    border: 1px solid maroon;
-    margin-top: 10px;
+    background-color: rgba(245, 245, 245, 0.2);
+    color: white;
+    margin-top: 20px;
     margin-left: 10px;
     text-align: center;
     padding: 5px;
@@ -101,6 +102,15 @@ form{
     width: 200px;
     height: 330px;
     padding: 5px;
+}
+.itemsList{
+    float: right;
+    background-color: rgba(245, 245, 245, 0.2);
+    color: white;
+}
+
+.notableItems{
+    background-color: #8FBC8F;
 }
 
 .bentHist{
@@ -139,43 +149,26 @@ form{
     height: 350px;
 }
 
-.univ{
+.faySect{
     border: 1px solid maroon;
     background-color: #F0F8FF;
-    width: 900px;
-    height: 150px;
+    text-align: center;
+    width: 60%;
+    height: 200px;
     overflow: scroll;
-    margin-top: 30px;
-    margin-left: 15px;
 }
 
-.leftPic{
+.highlightPics{
     width: 250px;
     height: 200px;
-    float: left;
-}
-
-.rightPic{
-    width: 250px;
-    height: 200px;
-    float: right;
 }
 
 #mapBtn{
     padding: 5px;
-    float:right;
-    margin-right: 300px;
 }
 
-.dickson{
+#dickson{
     float: right;
-    border: 1px solid maroon;
-    background-color: #F0F8FF;
-    width: 900px;
-    height: 150px;
-    overflow: scroll;
-    margin-right: 20px;
-    margin-top: 50px;
 }
 
 h3{
@@ -265,4 +258,9 @@ footer{
 .copyright{
     font-size: 10px;
     float: right;
+}
+
+.rightCopyright{
+    font-size: 10px;
+    float: left;
 }
