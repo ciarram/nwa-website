@@ -83,7 +83,7 @@ form{
     margin-top: 200px;
 }
 
-.fayHist{
+.townHist{
     width: 50%;
     background-color: rgba(245, 245, 245, 0.2);
     color: white;
@@ -93,16 +93,6 @@ form{
     padding: 5px;
 }
 
-#fayList{
-    float: right;
-    margin-right: 100px;
-    margin-top: 10px;
-    border: 0.5px solid maroon;
-    padding: 10px;
-    width: 200px;
-    height: 330px;
-    padding: 5px;
-}
 .itemsList{
     float: right;
     background-color: rgba(245, 245, 245, 0.2);
@@ -113,23 +103,6 @@ form{
     background-color: #8FBC8F;
 }
 
-.bentHist{
-    width: 50%;
-    border: 1px solid #0000CD;
-    margin-top: 10px;
-    margin-left: 10px;
-    text-align: center;
-}
-
-#bentList{
-    float: right;
-    margin-right: 100px;
-    margin-top: 10px;
-    border: 0.5px solid #0000CD;
-    padding: 10px;
-    width: 200px;
-    height: 240px;
-}
 
 .esHist{
     width: 50%;
@@ -137,16 +110,6 @@ form{
     margin-top: 10px;
     margin-left: 10px;
     text-align: center;
-}
-
-#esList{
-    float: right;
-    margin-right: 100px;
-    margin-top: 10px;
-    border: 0.5px solid #3CB371;
-    padding: 10px;
-    width: 200px;
-    height: 350px;
 }
 
 .faySect{
@@ -163,9 +126,6 @@ form{
     height: 200px;
 }
 
-#mapBtn{
-    padding: 5px;
-}
 
 #dickson{
     float: right;
@@ -176,67 +136,34 @@ h3{
     color: black;
 }
 
-.farmMark{
-    border: 1px solid maroon;
-    background-color: #F0F8FF;
-    width: 900px;
-    height: 150px;
-    overflow: scroll;
-    margin-top: 250px;
-    margin-left: 15px;
-}
-
-.square{
+.bentSect{
     border: 1px solid #0000CD;
     background-color: #F0F8FF;
-    width: 900px;
-    height: 150px;
+    text-align: center;
+    width: 60%;
+    height: 200px;
     overflow: scroll;
-    margin-top: 30px;
-    margin-left: 15px;
 }
 
-.crystal{
-    float: right;
-    border: 1px solid #0000CD;
-    background-color: #F0F8FF;
-    width: 900px;
-    height: 150px;
-    overflow: scroll;
-    margin-right: 20px;
-    margin-top: 50px;
-}
-
-.vicDown{
+.esSect{
     border: 1px solid #9400D3;
     background-color: #F0F8FF;
-    width: 900px;
-    height: 150px;
+    text-align: center;
+    width: 60%;
+    height: 200px;
     overflow: scroll;
-    margin-top: 30px;
-    margin-left: 15px;
 }
 
-.cresent{
+
+#crystal{
     float: right;
-    border: 1px solid #ADD8E6;
-    background-color: #F0F8FF;
-    width: 900px;
-    height: 150px;
-    overflow: scroll;
-    margin-right: 20px;
-    margin-top: 50px;
 }
 
-.thorn{
-    border: 1px solid #E6E6FA;
-    background-color: #F0F8FF;
-    width: 900px;
-    height: 150px;
-    overflow: scroll;
-    margin-top: 250px;
-    margin-left: 15px;
+
+#crescent{
+    float: right;
 }
+
 
 footer{
     margin-top: 50px;
