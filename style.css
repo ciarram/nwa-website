@@ -1,5 +1,26 @@
-body{
+#homePage{
+    background-image: url("images/war_eagle2.jpeg");
+    background-size: cover;
+}
+
+#eurekaSpringsPage{
+    background-image: url("images/eureka_springs_background.jpg");
+    background-size: cover;
+}
+
+#fayettevillePage{
+    background-image: url("images/fay_5.jpeg");
+    background-size: cover;
+}
+
+#contactPage{
+    background-image: url("images/pea_ridge3.jpg");
+    background-size: cover;
+}
+
+#bentonvillePage{
     background-image: url("images/background3.jpg");
+    background-size: cover;
 }
 
 nav{
@@ -21,12 +42,11 @@ nav{
     border: 1px solid black;
 }
 
-h2, h3, h4{
+h1, h2, h3, h4{
     text-align: center;
     font-family: "Palatino";
     color: white;
 }
-
 
 p, li{
     text-align: center;
@@ -35,13 +55,17 @@ p, li{
 }
 
 .jumbotron{
-    background-color: rgba(245, 245, 245, 0.2)
+    background-color: rgba(245, 245, 245, 0.2);
 }
 
 .nwaHistory{
-    margin: 20px 35px;
     border: 1px solid black;
     background-color: #F0F8FF;
+}
+
+#nwaSect{
+    background-color: rgba(245, 245, 245, 0.3);
+    color: white;
 }
 
 form{
@@ -64,9 +88,6 @@ form{
 }
 
 #weatherSection{
-    background-color: #F0F8FF;
-    border: 1px solid black;
-    margin: 20px 35px;
     visibility: hidden;
 }
 
@@ -103,7 +124,6 @@ form{
     background-color: #8FBC8F;
 }
 
-
 .esHist{
     width: 50%;
     border: 1px solid #8FBC8F;
@@ -117,6 +137,9 @@ form{
     background-color: #F0F8FF;
     text-align: center;
     width: 60%;
+}
+
+.media-body{
     height: 200px;
     overflow: scroll;
 }
@@ -125,7 +148,6 @@ form{
     width: 250px;
     height: 200px;
 }
-
 
 #dickson{
     float: right;
@@ -154,21 +176,17 @@ h3{
     overflow: scroll;
 }
 
-
 #crystal{
     float: right;
 }
-
 
 #crescent{
     float: right;
 }
 
-
 footer{
-    margin-top: 50px;
+    padding: 3px;
     width: 100%;
-    padding: 5px;
     background-color: teal;
     color: white;
     text-align: left;
@@ -180,11 +198,16 @@ footer{
 
 .footPar{
     text-align: left;
+    font-size: 15px;
 }
 
 .copyright{
     font-size: 10px;
     float: right;
+}
+
+#bentonCopy{
+    color: white;
 }
 
 .rightCopyright{

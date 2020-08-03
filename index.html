@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css" type="text/css">
     </head>
-    <body>
+    <body id="homePage">
         <nav class="navbar navbar-expand-sm">
           <a class="navbar-brand" href="index.html" id="navLogo">NWA</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,23 +25,27 @@
                 <a class="nav-link" href="es.html">Eureka Springs</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Learn More</a>
+                <a class="nav-link" href="contact.html">See Pics</a>
               </li>
             </ul>
           </div>
         </nav>
 
         <div class="container-fluid">
-          <h2>Welcome to Northwest Arkansas!</h2>
+          <div class="jumbotron jumbotron-fluid">
+            <h1 class="display-4">Welcome to Northwest Arkansas!</h1>
+            <p class="lead text-info">"The Natural State"</p>
+          </div>
           <br/>
-          <section class="nwaHistory">
-              <p>As you leave the River Valley and drive through the scenic Boston Mountains, you reach the area known as Northwest Arkansas. This is one of the most fascinating areas to visit, live or just pass through in the state of Arkansas. The area speads over Washington, Benton and Madison counties and includes dozens of cities and towns that each have their own distinct personalities. The natural limestone that the area sits on provides natural caves to explore and parks based around them to explore and camp on. The area also has a rich history that blends in with the layout of the landscape. This includes two Civil War battlefields, Pea Ridge and Prairie Grove, that are open for free to the public for a picnic or a pleasant spring walk.
-              </p>
-              <p>A connector between many of the towns in Northwest Arkansas is one of the most recent innovations in the area. The Razorback Regional Greenway is a 36 mile trail that begins in Fayetteville and ends in Bentonville. Existing trails in the region act as connectors to enter the main trail, as well as several heads to park your car and enter. This has created a notable trail system that is written about nationally and is bringing in an economic windfall for the area. The trails vary in difficulty, with most of the trail accessible for the whole family while other sections are better for the more advanced or off-road cyclists. You can easily follow the trail to reach parts of Fayetteville, Springdale, Rogers and Bentonville.
-              </p>
-              <p>Northwest Arkansas is an outdoor enthusiasts paradise. With multiple lakes, parks and a growing cycling culture, this area is continuing to grow and evolve. Anyone who comes to the region can see the vestages of the Native Americans who used to be the dominant inhabitants, the beginning of the settlements in the 1800s, and the economic growth from the 20th century and beyond. In a state known as "the Nautral State", Northwest Arkansas is a gem among the other natural wonders among the state.
-              </p>
-          </section>
+
+          <div class="card border-info" id="nwaSect">
+            <div class="card-body">
+              <p class="card-text">As you leave the River Valley and drive through the scenic Boston Mountains, you reach the area known as Northwest Arkansas. This is one of the most fascinating areas to visit, live or just pass through in the state of Arkansas. The area speads over Washington, Benton and Madison counties and includes dozens of cities and towns that each have their own distinct personalities. The natural limestone that the area sits on provides natural caves to explore and parks based around them to explore and camp on. The area also has a rich history that blends in with the layout of the landscape. This includes two Civil War battlefields, Pea Ridge and Prairie Grove, that are open for free to the public for a picnic or a pleasant spring walk.</p>
+              <p class="card-text">A connector between many of the towns in Northwest Arkansas is one of the most recent innovations in the area. The Razorback Regional Greenway is a 36 mile trail that begins in Fayetteville and ends in Bentonville. Existing trails in the region act as connectors to enter the main trail, as well as several heads to park your car and enter. This has created a notable trail system that is written about nationally and is bringing in an economic windfall for the area. The trails vary in difficulty, with most of the trail accessible for the whole family while other sections are better for the more advanced or off-road cyclists. You can easily follow the trail to reach parts of Fayetteville, Springdale, Rogers and Bentonville.</p>
+              <p class="card-text">Northwest Arkansas is an outdoor enthusiasts paradise. With multiple lakes, parks and a growing cycling culture, this area is continuing to grow and evolve. Anyone who comes to the region can see the vestages of the Native Americans who used to be the dominant inhabitants, the beginning of the settlements in the 1800s, and the economic growth from the 20th century and beyond. In a state known as "the Nautral State", Northwest Arkansas is a gem among the other natural wonders among the state.</p>
+            </div>
+          </div>
+
           <br/>
 
          <form id="weatherForm">
@@ -84,19 +88,21 @@
            <br/>
            <button type="submit" class="btn btn-primary" id="weatherBtn">Submit</button>
          </form>
-         <section id="weatherSection">
-           <h3>The Weather in <span id="cityWeatherName"></span> today is: </h3>
-           <p>Current Temperature: <span id="currentTemp"></span><span>&#8457;</span></p>
-           <p>Feels Like: <span id="feelTemp"></span><span>&#8457;</span></p>
-           <p>Humidity: <span id="humidity"></span><span>&#8457;</span></p>
-           <p>With: <span id="weatherDescrip"></span></p>
-          </section>
+
+          <div class="card border-info mb-3" id="weatherSection" style="max-width: 18rem;">
+            <div class="card-header">The Weather in <span id="cityWeatherName"></span> today is:</div>
+            <div class="card-body text-info">
+              <p class="card-text">Current Temperature: <span id="currentTemp"></span><span>&#8457;</span></p>
+              <p class="card-text">Feels Like: <span id="feelTemp"></span><span>&#8457;</span></p>
+              <p class="card-text">Humidity: <span id="humidity"></span> %</p>
+              <p class="card-text">With: <span id="weatherDescrip"></span></p>
+            </div>
+          </div>
         </div>
         
         <footer>
             <p class="footPar">Created by: Ciarra Murphy</p>
             <p class="footPar">Copyright: All photographs are my own, unless othewise noted next to the picture</p>
-            <p class="footPar">Background Photo from <a href="https://pixabay.com/photos/arkansas-devils-den-state-park-166097/">https://pixabay.com/photos/arkansas-devils-den-state-park-166097/</a></p>
         </footer>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
