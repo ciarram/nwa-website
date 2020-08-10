@@ -32,75 +32,83 @@
         </nav>
 
         <div class="container-fluid">
+          
           <div class="jumbotron jumbotron-fluid">
             <h1 class="display-4">Welcome to Northwest Arkansas!</h1>
             <p class="lead text-info">"The Natural State"</p>
           </div>
-          <br/>
-
-          <div class="card border-info" id="nwaSect">
-            <div class="card-body">
-              <p class="card-text">As you leave the River Valley and drive through the scenic Boston Mountains, you reach the area known as Northwest Arkansas. This is one of the most fascinating areas to visit, live or just pass through in the state of Arkansas. The area speads over Washington, Benton and Madison counties and includes dozens of cities and towns that each have their own distinct personalities. The natural limestone that the area sits on provides natural caves to explore and parks based around them to explore and camp on. The area also has a rich history that blends in with the layout of the landscape. This includes two Civil War battlefields, Pea Ridge and Prairie Grove, that are open for free to the public for a picnic or a pleasant spring walk.</p>
-              <p class="card-text">A connector between many of the towns in Northwest Arkansas is one of the most recent innovations in the area. The Razorback Regional Greenway is a 36 mile trail that begins in Fayetteville and ends in Bentonville. Existing trails in the region act as connectors to enter the main trail, as well as several heads to park your car and enter. This has created a notable trail system that is written about nationally and is bringing in an economic windfall for the area. The trails vary in difficulty, with most of the trail accessible for the whole family while other sections are better for the more advanced or off-road cyclists. You can easily follow the trail to reach parts of Fayetteville, Springdale, Rogers and Bentonville.</p>
-              <p class="card-text">Northwest Arkansas is an outdoor enthusiasts paradise. With multiple lakes, parks and a growing cycling culture, this area is continuing to grow and evolve. Anyone who comes to the region can see the vestages of the Native Americans who used to be the dominant inhabitants, the beginning of the settlements in the 1800s, and the economic growth from the 20th century and beyond. In a state known as "the Nautral State", Northwest Arkansas is a gem among the other natural wonders among the state.</p>
+         
+          <div class="row">
+            <div class="col">
+              <div class="card border-info" id="nwaSect">
+                <div class="card-body">
+                  <p class="card-text">As you leave the River Valley and drive through the scenic Boston Mountains, you reach the area known as Northwest Arkansas. This is one of the most fascinating areas to visit, live or just pass through in the state of Arkansas. The area speads over Washington, Benton and Madison counties and includes dozens of cities and towns that each have their own distinct personalities. The natural limestone that the area sits on provides natural caves to explore and parks based around them to explore and camp on. The area also has a rich history that blends in with the layout of the landscape. This includes two Civil War battlefields, Pea Ridge and Prairie Grove, that are open for free to the public for a picnic or a pleasant spring walk.</p>
+                  <p class="card-text">A connector between many of the towns in Northwest Arkansas is one of the most recent innovations in the area. The Razorback Regional Greenway is a 36 mile trail that begins in Fayetteville and ends in Bentonville. Existing trails in the region act as connectors to enter the main trail, as well as several heads to park your car and enter. This has created a notable trail system that is written about nationally and is bringing in an economic windfall for the area. The trails vary in difficulty, with most of the trail accessible for the whole family while other sections are better for the more advanced or off-road cyclists. You can easily follow the trail to reach parts of Fayetteville, Springdale, Rogers and Bentonville.</p>
+                  <p class="card-text">Northwest Arkansas is an outdoor enthusiasts paradise. With multiple lakes, parks and a growing cycling culture, this area is continuing to grow and evolve. Anyone who comes to the region can see the vestages of the Native Americans who used to be the dominant inhabitants, the beginning of the settlements in the 1800s, and the economic growth from the 20th century and beyond. In a state known as "the Nautral State", Northwest Arkansas is a gem among the other natural wonders among the state.</p>
+                </div>
+              </div>
             </div>
           </div>
 
-          <br/>
+          <div class="row mt-5"> 
+            <div class="col-sm-6">
+              <form class="border-info" id="weatherForm">
+                <h5>Select from the List of Cities/Towns in NWA to see the Current Weather</h5>
+                <select class="form-control form-control-lg mt-3" id="cityName">
+                  <option value="Bella Vista">Bella Vista</option>
+                  <option value="Bentonville">Bentonville</option>
+                  <option value="Berryville">Berryville</option>
+                  <option value="Bethel Heights">Bethel Heights</option>
+                  <option value="Cave Springs">Cave Springs</option>
+                  <option value="Centerton">Centerton</option>
+                  <option value="Decatur">Decatur</option>
+                  <option value="Elkins">Elkins</option>
+                  <option value="Elm Springs">Elm Springs</option>
+                  <option value="Eureka Springs">Eureka Springs</option>
+                  <option value="Farmington">Farmington</option>
+                  <option value="Fayetteville">Fayetteville</option>
+                  <option value="Garfield">Garfield</option>
+                  <option value="Gateway">Gateway</option>
+                  <option value="Gentry">Gentry</option>
+                  <option value="Goshen">Goshen</option>
+                  <option value="Gravette">Gravette</option>
+                  <option value="Green Forest">Green Forest</option>
+                  <option value="Greenland">Greenland</option>
+                  <option value="Highfill">Highfill</option>
+                  <option value="Huntsville">Huntsville</option>
+                  <option value="Johnson">Johnson</option>
+                  <option value="Lincoln">Lincoln</option>
+                  <option value="Lowell">Lowell</option>
+                  <option value="Pea Ridge">Pea Ridge</option>
+                  <option value="Prairie Grove">Prairie Grove</option>
+                  <option value="Rogers">Rogers</option>
+                  <option value="Siloam Springs">Siloam Springs</option>
+                  <option value="Springdale">Springdale</option>
+                  <option value="Sulphur Springs">Sulphur Springs</option>
+                  <option value="Tontitown">Tontitown</option>
+                  <option value="West Fork">West Fork</option>
+                  <option value="Winslow">Winslow</option>
+                </select>
+              <br/>
+              <button type="submit" class="btn btn-info mt-2" id="weatherBtn">Submit</button>
+            </form>
+            </div>
 
-         <form id="weatherForm">
-           <h5>Select from the List of Cities/Towns in NWA to see the Current Weather</h5>
-           <select class="form-control form-control-lg" id="cityName">
-             <option value="Bella Vista">Bella Vista</option>
-             <option value="Bentonville">Bentonville</option>
-             <option value="Berryville">Berryville</option>
-             <option value="Bethel Heights">Bethel Heights</option>
-             <option value="Cave Springs">Cave Springs</option>
-             <option value="Centerton">Centerton</option>
-             <option value="Decatur">Decatur</option>
-             <option value="Elkins">Elkins</option>
-             <option value="Elm Springs">Elm Springs</option>
-             <option value="Eureka Springs">Eureka Springs</option>
-             <option value="Farmington">Farmington</option>
-             <option value="Fayetteville">Fayetteville</option>
-             <option value="Garfield">Garfield</option>
-             <option value="Gateway">Gateway</option>
-             <option value="Gentry">Gentry</option>
-             <option value="Goshen">Goshen</option>
-             <option value="Gravette">Gravette</option>
-             <option value="Green Forest">Green Forest</option>
-             <option value="Greenland">Greenland</option>
-             <option value="Highfill">Highfill</option>
-             <option value="Huntsville">Huntsville</option>
-             <option value="Johnson">Johnson</option>
-             <option value="Lincoln">Lincoln</option>
-             <option value="Lowell">Lowell</option>
-             <option value="Pea Ridge">Pea Ridge</option>
-             <option value="Prairie Grove">Prairie Grove</option>
-             <option value="Rogers">Rogers</option>
-             <option value="Siloam Springs">Siloam Springs</option>
-             <option value="Springdale">Springdale</option>
-             <option value="Sulphur Springs">Sulphur Springs</option>
-             <option value="Tontitown">Tontitown</option>
-             <option value="West Fork">West Fork</option>
-             <option value="Winslow">Winslow</option>
-           </select>
-           <br/>
-           <button type="submit" class="btn btn-primary" id="weatherBtn">Submit</button>
-         </form>
-
-          <div class="card border-info mb-3" id="weatherSection" style="max-width: 18rem;">
-            <div class="card-header">The Weather in <span id="cityWeatherName"></span> today is:</div>
-            <div class="card-body text-info">
-              <p class="card-text">Current Temperature: <span id="currentTemp"></span><span>&#8457;</span></p>
-              <p class="card-text">Feels Like: <span id="feelTemp"></span><span>&#8457;</span></p>
-              <p class="card-text">Humidity: <span id="humidity"></span> %</p>
-              <p class="card-text">With: <span id="weatherDescrip"></span></p>
+            <div class="col-sm-6">
+              <div class="card border-info mb-3" id="weatherSection">
+                <div class="card-header">The Weather in <span id="cityWeatherName"></span> today is:</div>
+                <div class="card-body text-info">
+                  <p class="card-text">Current Temperature: <span id="currentTemp"></span><span>&#8457;</span></p>
+                  <p class="card-text">Feels Like: <span id="feelTemp"></span><span>&#8457;</span></p>
+                  <p class="card-text">Humidity: <span id="humidity"></span> %</p>
+                  <p class="card-text">With: <span id="weatherDescrip"></span></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         
-        <footer>
+        <footer class="adjustFooter">
             <p class="footPar">Created by: Ciarra Murphy</p>
             <p class="footPar">Copyright: All photographs are my own, unless othewise noted next to the picture</p>
         </footer>
