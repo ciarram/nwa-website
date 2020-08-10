@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="style.css" type="text/css">
     </head>
     <body id="fayettevillePage">
-        <nav class="navbar navbar-expand-sm">
+        <nav class="navbar navbar-expand-sm" id="fayNav">
             <a class="navbar-brand" href="index.html" id="navLogo">NWA</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               Pages
@@ -34,73 +34,92 @@
         <div class="container-fluid">
           <div class="jumbotron jumbotron-fluid">
             <div class="container">
-              <h2>Welcome to Fayetteville!</h2>
-              <p class="lead text-info">"Hog Country"</p>
+              <h1 class="display-4">Welcome to Fayetteville!</h1>
+              <p class="lead">"Hog Country"</p>
             </div>
           </div>
 
-          <div class="card itemsList" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title">Notable Places and Things in Fayetteville</h5>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item notableItems">Walton Arts Center</li>
-                <li class="list-group-item notableItems">George's Majestic Lounge</li>
-                <li class="list-group-item notableItems">Bikes Blues and BBQ</li>
-                <li class="list-group-item notableItems">Fayetteville Roots Festival</li>
-                <li class="list-group-item notableItems">Lights of the Ozarks</li>
-                <li class="list-group-item notableItems">Fayetteville Film Fest</li>
-                <li class="list-group-item notableItems">Botanical Garden of the Ozarks</li>
-                <li class="list-group-item notableItems">Terra Studios</li>
-              </ul>
+          <div class="row">
+            <div class="col-sm">
+              <div class="card townHist">
+                <div class="card-body">
+                  <h5 class="card-title">Origins of Fayetteville</h5>
+                  <p class="card-text">The city of Fayetteville was originally settled in 1828 under the name Washington Courthouse. It was renamed Fayetteville in 1829 and retains the name to this day. The city was officially incorporated in 1841, five years after Arkansas became a state in 1836. Ever since then, the town had kept growing. It has the atmosphere of a college town, which has only kept growing as the University has gotten bigger. Despite that, Fayetteville still has a strong community sense about it. Rated as one of the top places to live in the United States, Fayetteville has a growing arts scene, annual festivals and will turn out to call the Hogs for any of the collegiate sports throughout the year.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="card itemsList mt-3">
+                <div class="card-body">
+                  <h5 class="card-title">Notable Places and Things in Fayetteville</h5>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item fayNotableItems">Walton Arts Center</li>
+                    <li class="list-group-item fayNotableItems">George's Majestic Lounge</li>
+                    <li class="list-group-item fayNotableItems">Bikes Blues and BBQ</li>
+                    <li class="list-group-item fayNotableItems">Fayetteville Roots Festival</li>
+                    <li class="list-group-item fayNotableItems">Lights of the Ozarks</li>
+                    <li class="list-group-item fayNotableItems">Fayetteville Film Fest</li>
+                    <li class="list-group-item fayNotableItems">Botanical Garden of the Ozarks</li>
+                    <li class="list-group-item fayNotableItems">Terra Studios</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>   
+          
+          <div class="row mt-3 highlightSect">
+            <div class="col">
+              <h1>Highlights of Fayetteville</h1>
             </div>
           </div>
 
-          <div class="card townHist">
-            <div class="card-body">
-              <h5 class="card-title">Origins of Fayetteville</h5>
-              <p class="card-text">The city of Fayetteville was originally settled in 1828 under the name Washington Courthouse. It was renamed Fayetteville in 1829 and retains the name to this day. The city was officially incorporated in 1841, five years after Arkansas became a state in 1836. Ever since then, the town had kept growing. It has the atmosphere of a college town, which has only kept growing as the University has gotten bigger. Despite that, Fayetteville still has a strong community sense about it. Rated as one of the top places to live in the United States, Fayetteville has a growing arts scene, annual festivals and will turn out to call the Hogs for any of the collegiate sports throughout the year.</p>
+          <div class="row mt-3">
+            <div class="col-md-9 col-sm-4">
+              <div class="media faySect">
+                <img src="images/old_main.jpg" class="align-self-start mr-3 img-thumbnail highlightPics" alt="University of Arkansas">
+                <div class="media-body">
+                  <h5 class="mt-0">University of Arkansas</h5>
+                  <p>The University of Arkansas was founded in 1871. There was a bidding war between three towns to provide the land and money to build the university. Fayetteville won in the end. The most notable building on the campus is Old Main. Finished in 1875, it was one of the main buildings where classes were originally taught and is sometimes called the "mother" of the campus.</p> 
+                  <p>The campus has steadily grown since it's founding and now has a population of over 27,000 students as of Fall 2019. Its mascot, the Razorback, serves as a rally cry for the sports teams the University hosts including gymnastics, track and field, baseball, basketball and, since we are in the South, football.
+                  </p>
+                  <p class="copyright">&#169;Photo from <a href="https://www.arkansasalumni.org/s/1429/index.aspx?sid=1429&gid=1&pgid=440">https://www.arkansasalumni.org/s/1429/index.aspx?sid=1429&gid=1&pgid=440</a></p>
+                  <a href="images/university-map.jpg" download="university-map.jpg">
+                    <button type="button" id="mapBtn">Click Here to Download a University Map</button>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
             
-          <section class="highightSec">
-            <h2>Highlights of Fayetteville</h2>
-
-            <div class="media faySect">
-              <img src="images/old_main.jpg" class="align-self-start mr-3 img-thumbnail highlightPics" alt="University of Arkansas">
-              <div class="media-body">
-                <h5 class="mt-0">University of Arkansas</h5>
-                <p>The University of Arkansas was founded in 1871. There was a bidding war between three towns to provide the land and money to build the university. Fayetteville won in the end. The most notable building on the campus is Old Main. Finished in 1875, it was one of the main buildings where classes were originally taught and is sometimes called the "mother" of the campus.</p> 
-                <p>The campus has steadily grown since it's founding and now has a population of over 27,000 students as of Fall 2019. Its mascot, the Razorback, serves as a rally cry for the sports teams the University hosts including gymnastics, track and field, baseball, basketball and, since we are in the South, football.
-                </p>
-                <p class="copyright">&#169;Photo from <a href="https://www.arkansasalumni.org/s/1429/index.aspx?sid=1429&gid=1&pgid=440">https://www.arkansasalumni.org/s/1429/index.aspx?sid=1429&gid=1&pgid=440</a></p>
-                <a href="images/university-map.jpg" download="university-map.jpg">
-                  <button type="button" class="btn btn-info btn-lg btn-block" id="mapBtn">Click Here to Download a University Map</button>
-                </a>
+          <div class="row mt-3 justify-content-end">
+            <div class="col-md-9 col-sm-4">
+              <div class="media faySect">
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">Dickson Street</h5>
+                  <p>If there's one street in Fayetteville you can just say by one name and everyone knows immediately where and what it is, it's Dickson Street. As you leave the west side of the University campus, you encounter a street that stretches down over a mile. Dickson Street was one of the original streets in Fayetteville, dating back to the 1840s. Many of the businesss on Dickson are housed in buildings from the 1800s.</p> 
+                  <p>Many businesses have been on Dickson for decades and are institutions: George's Majestic Lounge, Collier's Drug Store and Dickson Street Bookshop to name a few. The addition of the Walton Arts Center helped to revitalize the street in the early 1990s and the street is center to many anual celebrations in Fayetteville.
+                    <p class="rightCopyright" >&#169;Photo from <a href="https://armoneyandpolitics.com/fayetteville-arkansas-epicenter-universe/">https://armoneyandpolitics.com/fayetteville-arkansas-epicenter-universe/</a></p>
+                  </p>
+                </div>
+                <img src="images/dickson_street.jpg" class="align-self-start ml-3 img-thumbnail highlightPics" alt="Dickson Street">
               </div>
             </div>
+          </div>
 
-            <div class="media faySect" id="dickson">
-              <div class="media-body">
-                <h5 class="mt-0 mb-1">Dickson Street</h5>
-                <p>If there's one street in Fayetteville you can just say by one name and everyone knows immediately where and what it is, it's Dickson Street. As you leave the west side of the University campus, you encounter a street that stretches down over a mile. Dickson Street was one of the original streets in Fayetteville, dating back to the 1840s. Many of the businesss on Dickson are housed in buildings from the 1800s.</p> 
-                <p>Many businesses have been on Dickson for decades and are institutions: George's Majestic Lounge, Collier's Drug Store and Dickson Street Bookshop to name a few. The addition of the Walton Arts Center helped to revitalize the street in the early 1990s and the street is center to many anual celebrations in Fayetteville.
-                  <p class="rightCopyright" >&#169;Photo from <a href="https://armoneyandpolitics.com/fayetteville-arkansas-epicenter-universe/">https://armoneyandpolitics.com/fayetteville-arkansas-epicenter-universe/</a></p>
-                </p>
-              </div>
-              <img src="images/dickson_street.jpg" class="align-self-start ml-3 img-thumbnail highlightPics" alt="Dickson Street">
-            </div>
-
-            <div class="media faySect">
-              <img src="images/farm_market.jpeg" class="align-self-start mr-3 img-thumbnail highlightPics" alt="Farmer's Market">
-              <div class="media-body">
-                <h5 class="mt-0">Fayetteville Farmer's Market</h5>
-                <p>The Fayetteville Farmer's Market has been serving the city year round for almost 50 years. Established in 1973, the market has a policy that all of the products offered must be locally grown or made. During the winter month's, the market moves indoors into Ozark Natural Foods, a local co-op. From April through October, the market is located on the downtown Fayetteville sqaure. Market days on Tuesdays and Thursdays host many local farms that provide in-season produce and vegetables.</p>
-                <p>Every Saturday, the market becomes a hub of activity. Saturday markets provide local produce, artwork, crafts, artisinal products, seasonal offerings and entertainment for the whole family. Just make sure to get their early before some of the most desirable products are gone. <a href ="https://www.fayettevillefarmersmarket.org/">Learn more about the market and how to order online at their website.</a></p>
+          <div class="row mt-3">
+            <div class="col-md-9 col-sm-4">
+              <div class="media faySect">
+                <img src="images/farm_market.jpeg" class="align-self-start mr-3 img-thumbnail highlightPics" alt="Farmer's Market">
+                <div class="media-body">
+                  <h5 class="mt-0">Fayetteville Farmer's Market</h5>
+                  <p>The Fayetteville Farmer's Market has been serving the city year round for almost 50 years. Established in 1973, the market has a policy that all of the products offered must be locally grown or made. During the winter month's, the market moves indoors into Ozark Natural Foods, a local co-op. From April through October, the market is located on the downtown Fayetteville sqaure. Market days on Tuesdays and Thursdays host many local farms that provide in-season produce and vegetables.</p>
+                  <p>Every Saturday, the market becomes a hub of activity. Saturday markets provide local produce, artwork, crafts, artisinal products, seasonal offerings and entertainment for the whole family. Just make sure to get their early before some of the most desirable products are gone. <a href ="https://www.fayettevillefarmersmarket.org/">Learn more about the market and how to order online at their website.</a></p>
+                </div>
               </div>
             </div>
-          </section>
+          </div>
         </div>
-    <footer>
+    <footer id="fayFooter">
         <p class="footPar">Created by: Ciarra Murphy</p>
         <p class="footPar">Copyright: All photographs are my own, unless othewise noted next to the picture</p>
     </footer>

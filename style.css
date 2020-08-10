@@ -28,13 +28,17 @@ nav{
     padding: 15px;
 }
 
+#fayNav{
+    background-color: rgb(231, 117, 50);
+}
+
 .nav-link{
     color: white;
 }
 
 #navLogo{
     background-color: white;
-    color: teal;
+    color: black;
 }
 
 .navbar-toggler{
@@ -104,13 +108,8 @@ form{
     height: 1200px;
 }
 
-.highightSec{
-    margin-top: 200px;
-}
-
 .townHist{
-    width: 50%;
-    background-color: rgba(245, 245, 245, 0.2);
+    background-color: rgba(245, 245, 245, 0.3);
     color: white;
     margin-top: 20px;
     margin-left: 10px;
@@ -119,13 +118,23 @@ form{
 }
 
 .itemsList{
-    float: right;
+    width: 50%;
+    margin: auto;
     background-color: rgba(245, 245, 245, 0.2);
     color: white;
 }
 
 .notableItems{
     background-color: #8FBC8F;
+}
+
+.fayNotableItems{
+    background-color: #CD5C5C;
+}
+
+.highlightSect{
+    background-color: rgba(245, 245, 245, 0.3);
+    padding: 10px;
 }
 
 .esHist{
@@ -140,7 +149,11 @@ form{
     border: 1px solid maroon;
     background-color: #F0F8FF;
     text-align: center;
-    width: 60%;
+}
+
+#mapBtn{
+    background-color: #CD5C5C;
+    color: white;
 }
 
 .media-body{
@@ -149,12 +162,8 @@ form{
 }
 
 .highlightPics{
-    width: 250px;
+    width: 200px;
     height: 200px;
-}
-
-#dickson{
-    float: right;
 }
 
 h3{
@@ -194,6 +203,11 @@ footer{
     background-color: teal;
     color: white;
     text-align: left;
+    margin-top: 20px;
+}
+
+#fayFooter{
+    background-color: rgb(231, 117, 50);
 }
 
 .adjustFooter{
