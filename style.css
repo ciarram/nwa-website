@@ -28,8 +28,12 @@ nav{
     padding: 15px;
 }
 
-#fayNav{
+#fayNav, #fayFooter{
     background-color: rgb(231, 117, 50);
+}
+
+#bentNav, #bentFooter{
+    background-color: rgb(42, 139, 105);
 }
 
 .nav-link{
@@ -117,6 +121,16 @@ form{
     padding: 5px;
 }
 
+#fayCardBody{
+    background-color: rgb(250, 245, 245, 0.5);
+    color: #8B0000;
+}
+
+#bentCardBody{
+    background-color: rgb(250, 245, 245, 0.5);
+    color: rgb(25, 80, 49);
+}
+
 .itemsList{
     width: 50%;
     margin: auto;
@@ -162,7 +176,7 @@ form{
 }
 
 .highlightPics{
-    width: 200px;
+    width: 215px;
     height: 200px;
 }
 
@@ -175,7 +189,6 @@ h3{
     border: 1px solid #0000CD;
     background-color: #F0F8FF;
     text-align: center;
-    width: 60%;
     height: 200px;
     overflow: scroll;
 }
@@ -204,10 +217,6 @@ footer{
     color: white;
     text-align: left;
     margin-top: 20px;
-}
-
-#fayFooter{
-    background-color: rgb(231, 117, 50);
 }
 
 .adjustFooter{
