@@ -25,7 +25,7 @@ function weatherForm(){
     document.getElementById("weatherBtn").addEventListener('click', function(event){
         var cityEntry = document.getElementById('cityName').value;
         var req = new XMLHttpRequest();
-        var url = "http://api.openweathermap.org/data/2.5/weather?q=" + cityEntry + ",ar,us&appid=" + apiKey + "&units=imperial";
+        var url = "https://api.openweathermap.org/data/2.5/weather?q=" + cityEntry + ",ar,us&appid=" + apiKey + "&units=imperial";
         req.open("GET", url, true);
 
         //handles the asynchronous response
