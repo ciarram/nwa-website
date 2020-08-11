@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="style.css" type="text/css">
     </head>
     <body id="eurekaSpringsPage">
-        <nav class="navbar navbar-expand-sm">
+        <nav class="navbar navbar-expand-sm" id="esNav">
             <a class="navbar-brand" href="index.html" id="navLogo">NWA</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               Pages
@@ -34,71 +34,89 @@
         <div class="container-fluid">
           <div class="jumbotron jumbotron-fluid">
             <div class="container">
-              <h2>Welcome to Eureka Springs!</h2>
-              <p class="lead text-info">"Little Switzerland of the Ozarks"</p>
-              <br/>
-              <p class="rightCopyright">&#169;Background Photo from: <a href="https://pixabay.com/photos/eureka-springs-flat-iron-flats-3809944/">https://pixabay.com/photos/eureka-springs-flat-iron-flats-3809944/</a></p>
-            </div>
+              <h1 class="display-4">Welcome to Eureka Springs!</h1>
+              <p class="lead">"Little Switzerland of the Ozarks"</p>
             </div>
           </div>
 
-          <div class="card itemsList" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title">Notable Places and Things in Eureka Springs</h5>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item notableItems">Eureka Springs May Festival of the Arts</li>
-                <li class="list-group-item notableItems">Ozark Fold Festival</li>
-                <li class="list-group-item notableItems">Christmas Tour of Homes</li>
-                <li class="list-group-item notableItems">Turpentine Creek Wildlife Refuge</li>
-                <li class="list-group-item notableItems">Onyx Cave and Cosmic Cavern</li>
-                <li class="list-group-item notableItems">Quigley's Castle</li>
-                <li class="list-group-item notableItems">Belle of the Ozarks</li>
-                <li class="list-group-item notableItems">Eureka Springs and North Arkansas Railway</li>
-              </ul>
+          <div class="row">
+            <div class="col-sm">
+              <div class="card townHist">
+                <div class="card-body" id="esCardBody">
+                  <h5 class="card-title">Origins of Eureka Springs</h5>
+                  <p class="card-text">Eureka Springs is a small town with a big history. The town was officially founded in 1879, but the area was discovered in 1856. The original business endeavors that came from the town sprang, pun not intended, from the natural springs that had been used since the Native Americans were the primary inhabitants of the area. They were known as healing springs and the springs can still be seen in the town. Eureka Springs has weathered economic ups and downs for over 100 years and is now known as a small tourist hotspot. The town is nestled deep in the hills of Northwest Arkansas, and not a place you would want to get stuck trying to get to on a bad winter day. But, the views and landscape add to the special quality that makes Eureka Springs quirky and unique.</p>
+                </div>
+              </div>
             </div>
-          </div> 
+
+            <div class="col-sm">
+              <div class="card itemsList mt-3">
+                <div class="card-body">
+                  <h5 class="card-title">Notable Places and Things in Eureka Springs</h5>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item esNotableItems">Eureka Springs May Festival of the Arts</li>
+                    <li class="list-group-item esNotableItems">Ozark Fold Festival</li>
+                    <li class="list-group-item esNotableItems">Christmas Tour of Homes</li>
+                    <li class="list-group-item esNotableItems">Turpentine Creek Wildlife Refuge</li>
+                    <li class="list-group-item esNotableItems">Onyx Cave and Cosmic Cavern</li>
+                    <li class="list-group-item esNotableItems">Quigley's Castle</li>
+                    <li class="list-group-item esNotableItems">Belle of the Ozarks</li>
+                    <li class="list-group-item esNotableItems">Eureka Springs and North Arkansas Railway</li>
+                  </ul>
+                </div>
+              </div> 
+            </div>            
+          </div>
+
+          <div class="row mt-3 highlightSect">
+            <div class="col">
+              <h1>Highlights of Eureka Springs</h1>
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-md-9 col-sm-4">
+              <div class="media esSect">
+                <img src="images/eureka_2.jpeg" class="align-self-start mr-3 img-thumbnail highlightPics" alt="Historic ES">
+                <div class="media-body">
+                  <h5 class="mt-0">Historic Downtown Eureka Springs</h5>
+                  <p>When locals think about Eureka Springs, one of the first things to pop into their minds is the historic downtown. When you drive your car into the entrance of downtown, you almost feel like you're stepping back in time. The only difference is that modern cars have replaced horses and carriages (and of course there is electricity and air conditioning). Downtown Eureka Springs has retained the vestages of its Victorian architecture.</p>
+                  <p>Nestled into the buildings are shops and restuarants, some of which have been there for decades. There is a trolley tour that takes visitors around the downtown area and through the hills to look at the Victorian design and gives a great history about the town. You can walk on the sidewalks and drive on the roads that haven't been changed too much since the town was founded in the late 1800s. Just watch your step!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-3 justify-content-end">
+            <div class="col-md-9 col-sm-4">
+              <div class="media esSect" id="crescent">
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">Crescent Hotel</h5>
+                  <p>The Crescent Hotel and Spa is not just a beautiful piece of uniquely Victorian architecture, but it has the reputation of being America's Most Haunted Hotel. Founded in 1886 and built out of limestone that is the bedrock of Northwest Arkansas, the Crescent Hotel sits on a hill overlooking downtown Eureka Springs. The hotel has 72 rooms that a visitor could stay in or if you are just in town for the day, you can look around the hotel lobby and its garden areas.</p> 
+                  <p>The stories of ghosts haunting the hotel springs from the 1930s, when a man bought the hotel and began treating cancer patients. But, this man was not a doctor so many people may have met an untimely end. Spirits have been seen by guests and employees. But, don't think they shy away from th notoriety of it. The hotel offers ghost tours and Haloween sceances. <a href="https://www.crescent-hotel.com/">Learn more about the hotel and the ghost tours they offer.</a>
+                    <p class="copyright">&#169;Photo from <a href="https://www.historichotels.org/hotels-resorts/1886-crescent-hotel-and-spa/reviews.php">https://www.historichotels.org/hotels-resorts/1886-crescent-hotel-and-spa/reviews.php</a></p>
+                  </p>
+                </div>
+                <img src="images/crescent_hotel.jpg" class="align-self-start ml-3 img-thumbnail highlightPics" alt="Crescent Hotel">
+              </div>
+            </div>
+          </div>
           
-          <div class="card townHist">
-            <div class="card-body">
-              <h5 class="card-title">Origins of Eureka Springs</h5>
-              <p class="card-text">Eureka Springs is a small town with a big history. The town was officially founded in 1879, but the area was discovered in 1856. The original business endeavors that came from the town sprang, pun not intended, from the natural springs that had been used since the Native Americans were the primary inhabitants of the area. They were known as healing springs and the springs can still be seen in the town. Eureka Springs has weathered economic ups and downs for over 100 years and is now known as a small tourist hotspot. The town is nestled deep in the hills of Northwest Arkansas, and not a place you would want to get stuck trying to get to on a bad winter day. But, the views and landscape add to the special quality that makes Eureka Springs quirky and unique.</p>
+          <div class="row mt-3">
+            <div class="col-md-9 col-sm-4">
+              <div class="media esSect">
+                <img src="images/thorncrown.jpeg" class="align-self-start mr-3 img-thumbnail highlightPics" alt="Thorncrown Chapel">
+                <div class="media-body">
+                  <h5 class="mt-0">Thorncrown Chapel</h5>
+                  <p>It's not surprising that buildings in Northwest Arkansas would be designed to take advantage of the beautiful landscape. That was taken seriously when Thorncrown Chapel was designed and opened in 1980. The chapel was designed by Fay Jones, a local architect who studied under Frank Lloyd Wright. It's comprised of wood, local stone and glass everywhere. The chapel has an unencumbered view from the hill that it sits on.</p>
+                  <p>It is an active church and holds services on Sundays. The rest of the week, it is open for people to come in and look around. You can even hear a guide tell about the history of the chapel. It's also no surprise that the chapel is an extremely popular venue for weddings.</p>
+                </div>
+              </div>
             </div>
           </div>
-
-          <section class="highightSec">
-            <h2>Highlights of Eureka Springs</h2>
-
-            <div class="media esSect">
-              <img src="images/eureka_2.jpeg" class="align-self-start mr-3 img-thumbnail highlightPics" alt="Historic ES">
-              <div class="media-body">
-                <h5 class="mt-0">Historic Downtown Eureka Springs</h5>
-                <p>When locals think about Eureka Springs, one of the first things to pop into their minds is the historic downtown. When you drive your car into the entrance of downtown, you almost feel like you're stepping back in time. The only difference is that modern cars have replaced horses and carriages (and of course there is electricity and air conditioning). Downtown Eureka Springs has retained the vestages of its Victorian architecture.</p>
-                <p>Nestled into the buildings are shops and restuarants, some of which have been there for decades. There is a trolley tour that takes visitors around the downtown area and through the hills to look at the Victorian design and gives a great history about the town. You can walk on the sidewalks and drive on the roads that haven't been changed too much since the town was founded in the late 1800s. Just watch your step!</p>
-              </div>
-            </div>
-
-            <div class="media esSect" id="crescent">
-              <div class="media-body">
-                <h5 class="mt-0 mb-1">Crescent Hotel</h5>
-                <p>The Crescent Hotel and Spa is not just a beautiful piece of uniquely Victorian architecture, but it has the reputation of being America's Most Haunted Hotel. Founded in 1886 and built out of limestone that is the bedrock of Northwest Arkansas, the Crescent Hotel sits on a hill overlooking downtown Eureka Springs. The hotel has 72 rooms that a visitor could stay in or if you are just in town for the day, you can look around the hotel lobby and its garden areas.</p> 
-                <p>The stories of ghosts haunting the hotel springs from the 1930s, when a man bought the hotel and began treating cancer patients. But, this man was not a doctor so many people may have met an untimely end. Spirits have been seen by guests and employees. But, don't think they shy away from th notoriety of it. The hotel offers ghost tours and Haloween sceances. <a href="https://www.crescent-hotel.com/">Learn more about the hotel and the ghost tours they offer.</a>
-                  <p class="copyright">&#169;Photo from <a href="https://www.historichotels.org/hotels-resorts/1886-crescent-hotel-and-spa/reviews.php">https://www.historichotels.org/hotels-resorts/1886-crescent-hotel-and-spa/reviews.php</a></p>
-                </p>
-              </div>
-              <img src="images/crescent_hotel.jpg" class="align-self-start ml-3 img-thumbnail highlightPics" alt="Crescent Hotel">
-            </div>
-
-            <div class="media esSect">
-              <img src="images/thorncrown.jpeg" class="align-self-start mr-3 img-thumbnail highlightPics" alt="Thorncrown Chapel">
-              <div class="media-body">
-                <h5 class="mt-0">Thorncrown Chapel</h5>
-                <p>It's not surprising that buildings in Northwest Arkansas would be designed to take advantage of the beautiful landscape. That was taken seriously when Thorncrown Chapel was designed and opened in 1980. The chapel was designed by Fay Jones, a local architect who studied under Frank Lloyd Wright. It's comprised of wood, local stone and glass everywhere. The chapel has an unencumbered view from the hill that it sits on.</p>
-                <p>It is an active church and holds services on Sundays. The rest of the week, it is open for people to come in and look around. You can even hear a guide tell about the history of the chapel. It's also no surprise that the chapel is an extremely popular venue for weddings.</p>
-              </div>
-            </div>
-          </section>
         </div>
-        <footer>
+
+        <footer id="esFooter">
             <p class="footPar">Created by: Ciarra Murphy</p>
             <p class="footPar">Copyright: All photographs are my own, unless othewise noted next to the picture</p>
         </footer>
